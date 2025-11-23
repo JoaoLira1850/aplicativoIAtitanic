@@ -104,30 +104,12 @@ O front-end deste projeto foi desenvolvido em **React Native**, funcionando como
 
 ---
 
-### 🔗 Integração com o Backend FastAPI
-
-```javascript
-const response = await fetch(`${API_URL}/predict`, {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    Sex,
-    Age,
-    SibSp,
-    Parch,
-    Fare,
-    Pclass_2,
-    Pclass_3,
-    Embarked_Q,
-    Embarked_S,
-  }),
-});
-
-
 ### ✔ Como rodar
 ```bash
 pip install -r requirements.txt
 uvicorn main:app --reload
 npm install
 npx expo start
+
+
 
